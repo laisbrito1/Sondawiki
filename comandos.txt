@@ -1,0 +1,35 @@
+
+################## COMANDOS HUAWEI #############################
+
+
+idle-timeout TEMPO (min)
+huawei(config)#smart 								::::: modo de resumo de configuração (em modo display)
+display sysman service state 						::::: serviço (tipo ip>service)
+display history-command 							::::: últimos 10 comandos da caixa
+display log cli all 								::::: log de comando /user/dia/hora
+display terminal user locked all 					::::: exibe usuários bloqueados
+terminal unlock user 								::::: desbloquear usuários
+display terminal user all 							::::: mostra os usuários criados
+terminal user password 								::::: mudança de senha de usuários
+display client 										::::: mostra sessões usuários/conectadadas
+client kickoff ID 									::::: chuta um cliente logado na caixa
+undo terminal 										::::: remove usuário
+display languague
+display patch all
+display alarm history all
+display alarm active all - alarmes ativos na OLT
+display board 0 ou 0/1 								::::: 0 é o frame e 0/1 é o frame/slot
+sysman source trap vlanif 700 						::::: snmp-agent trap source vlanif ID
+Display interface
+Display current configuration
+sysname - renomear roteador
+ospf 
+commit - aplicar as alterações
+display this - mostrar configs da interface
+display configuration commit list - Logs dos ultimos commits 
+interface emu 1 > dis vesc alarm  ::::::::: VER ALARMES
+display bgp vpnv4 all peer :::::::: INFORMAÇÕES DO BGP vpn
+Config> enable> interface gpon 0/1 > display ont optical-info *porta* all  :::::: Verificar Sinal das ONUs na porta
+
+-------------------------------------------
+

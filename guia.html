@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guia de Aceitação dos Equipamentos</title>
+    <link rel="stylesheet" href= "style.css">
+    <link rel="icon" type="image/x-icon" href="SN.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+   
+
+  <h3>
+    Guia de Aceitação dos Equipamentos
+  </h3>
+  <div class="container3">
+ 
+</div>
+<nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+    <a class="navbar-brand" href="#">Guia de Aceitação dos Equipamentos</a>
+    
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    <h4 id="scrollspyHeading1">Subir Conexão DWDM (Se houver)</h4>
+    <p>a. Exemplos: <br>
+
+      i. Campo Grande - Sidrolândia;<br>
+      ii. Sidrolândia - Maracaju;<br>
+      iii. Maracaju - Dourados;<br>
+      iv. Dourados -  Fátima do Sul.</p>
+    <h4 id="scrollspyHeading2">Configurar DWDM</h4>
+    <p>i. Subir NE através de OSC;<br>
+
+      ii. Validar níveis de potência em ambos os lados (se estão iguais);<br>
+      
+      iii. Realizar Conexões Lógicas em Signal Flow;<br>
+      
+      iv. Realizar Remarks das Placas e Rename das Interfaces/Placas;<br>
+      
+      v. Criar WDM Trail;<br>
+      
+      vi. Realizar alinhamento de Canal;<br>
+      
+      vii. Realizar ajuste de potência/sinal;<br>
+      
+      viii. Preencher Referência de Potências nas placas AST2, DAP e LDCD;<br>
+      
+      ix. Validar Backup do Equipamento no NCE.<br></p>
+
+
+    <h4 id="scrollspyHeading3">Subir conexão com Roteador (Se houver):</h4>
+    <p>a. Adicionar Equipamento no Radius:
+      i. Consultar Antônio, Bruno, Fabricio, Hank, Junio ou Paulo para tal procedimento; <br>
+
+      ii. Realizar procedimento sempre que subir um novo Equipamento.<br>
+      b. Validar se os usuários estão autenticando com suas respectivas senhas (Radius);<br><br>
+      c. Validar roteamento até o Equipamento (OSPF/MPLS);<br>
+      i. Precisa checar se há conexão OSPF point-to-point -> display ospf interface (válido somente para enlaces backbone).
+      <br><br>
+        d. Validar configurações de ACL, Banner e SNMP Cacti/Zabbix (Válidos para Equipamentos até Três Lagoas; para mais informações consultar Antônio, Paulo ou Fabricio);    <br>    
+
+        e. Adicionar o Equipamento no NCE;        <br>
+
+        f. Validar conexão do NCE com o Equipamento através de SNMP, STELNET e SNETCONF;     <br>   
+
+        g. Validar Backup do Equipamento no NCE;        
+        <br>
+        h. Organizar Links e Topologia em Topology View no NCE (Fiber Link e L2 Link);     <br>   
+
+        i. Adicionar Equipamento no DNS e validar acesso pelo Reverso;        <br>
+
+        j. Adicionar Equipamento no CACTI;        <br>
+
+        k. Adicionar Equipamento no Zabbix;       
+        <br>
+        l. Adicionar Equipamento no Grafana;        <br>
+
+        m. Preencher a planilha de DADOS DE ENTREGA de acordo com a Pasta do Projeto.<br>
+      
+    </p>
+
+
+    <h4 id="scrollspyHeading4">Subir conexão com Switch:</h4>
+    <p>a. Adicionar equipamento no Radius: <br> 
+
+      i. Consultar Antônio, Bruno, Fabricio, Hank, Junio ou Paulo para tal procedimento; <br>
+      
+      ii. Realizar procedimento sempre que subir um novo Equipamento. <br> <br>
+      
+      b. Validar se os usuários estão autenticando com suas respectivas senhas (Radius); <br>
+      
+      c. Validar roteamento até o Equipamento (OSPF/MPLS); <br>
+      
+      i. Precisa checar se há conexão OSPF point-to-point -> display ospf interface. <br>
+      
+      d. Validar configurações de ACL, Banner e SNMP Cacti/Zabbix (Válidos para Equipamentos até Três Lagoas; para mais informações consultar Antônio, Paulo ou Fabricio); <br>
+      
+      e. Adicionar o Equipamento no NCE; <br>
+      
+      f. Validar conexão do NCE com o Equipamento através de SNMP e STELNET; <br>
+      
+      g. Validar Backup do Equipamento no NCE; <br>
+      
+      h. Organizar Links e Topologia em Topology View no NCE (Fiber Link e L2 Link); <br>
+      
+      i. Adicionar Equipamento no DNS e validar acesso pelo Reverso; <br>
+      
+      j. Adicionar Equipamento no CACTI; <br>
+      
+      k. Adicionar Equipamento no Zabbix; <br>
+      
+      l. Adicionar Equipamento no Grafana;
+      <br>
+      m. Preencher a planilha de DADOS DE ENTREGA de acordo com a Pasta do Projeto.</p> <br>
+    <h4 id="scrollspyHeading5">Configuração de OLT:</h4>
+    <p>a. Adicionar equipamento no Radius: <br>
+
+      i. Consultar Antônio, Bruno, Fabricio, Hank, Junio ou Paulo para tal procedimento; <br>
+      
+      ii. Realizar procedimento sempre que subir um novo Equipamento. <br> <br>
+      
+      b. Validar se os usuários estão autenticando com suas respectivas senhas (Radius); <br>
+      
+      c. Validar configurações de ACL (Telnet/SSH) (Válidos para Equipamentos até Três Lagoas; para mais informações consultar Antônio, Paulo ou Fabricio); <br>
+      
+      d. Adicionar o Equipamento no NCE; <br>
+      
+      e. Validar conexão do NCE com o Equipamento através de SNMP e STELNET;
+      <br>
+      f. Validar Backup do Equipamento no NCE;
+      <br>
+      g. Renomear Interfaces GPON/Ethernet no NCE de acordo com os Ramais (consultar projeto da cidade em questão)
+      <br>
+      h. Adicionar Equipamento no DNS e validar acesso pelo Reverso;
+      <br>
+      i. Adicionar Equipamento no Zabbix;
+      <br>
+      j. Adicionar Equipamento no Grafana;
+      <br>
+      k. Adicionar Equipamento em Transmissores no IXC e validar conexão IXC com OLT.
+      <br>
+      l. Organizar ONU Topology View no NCE (de acordo com Projeto do IXC FiberDocs);
+      <br>
+      m. Preencher a planilha de DADOS DE ENTREGA de acordo com a Pasta do Projeto.<br> 
+
+        
+    
+
+     </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
